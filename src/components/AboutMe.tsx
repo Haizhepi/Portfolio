@@ -27,13 +27,13 @@ const AboutMe = () => {
         </Typography>
       </Box>
       <Box mx={10}>
-        <Grid container spacing={0} justify="center">
-          <Grid item xs={3} alignItems="center">
+        <Grid container spacing={2} justify="center">
+          <Grid item md={3} alignItems="center">
             <Typography align="center">• Node.js</Typography>
             <Typography align="center">• React.js</Typography>{" "}
             <Typography align="center">• Flask</Typography>
           </Grid>
-          <Grid item xs={3} alignItems="center">
+          <Grid item md={3} alignItems="center">
             <Typography align="center">• AWS</Typography>
             <Typography align="center">• MongoDB</Typography>{" "}
             <Typography align="center">• IOS (Swift UI)</Typography>
