@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import { createTheme } from "@material-ui/core/styles";
 import { ThemeProvider } from "@material-ui/styles";
@@ -33,11 +33,25 @@ const theme = createTheme({
   },
 });
 function App() {
+  const [isMobile, setIsMobile] = useState<boolean>(false);
+  useEffect(() => {
+    const setResponsiveness = () => {
+      return window.innerWidth < 800 ? setIsMobile(false) : setIsMobile(true);
+    };
+
+    setResponsiveness();
+    window.addEventListener("resize", () => setResponsiveness());
+
+    return () => {
+      window.removeEventListener("resize", () => setResponsiveness());
+    };
+  }, []);
   return (
     <React.Fragment>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Navbar />
+        <Navbar isMobile={isMobile} />
+
         <Element name="aboutme">
           <Home />
           <AboutMe />
@@ -52,7 +66,7 @@ function App() {
         </Element>
 
         <Element name="projects">
-          <Projects />
+          <Projects isMobile={isMobile} />
         </Element>
         <ContactFab />
         <Footer />

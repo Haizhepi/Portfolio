@@ -52,7 +52,9 @@ const MenuItems: item[] = [
   },
 ];
 
-export default function Navbar() {
+const Navbar: React.FunctionComponent<{ isMobile: boolean }> = ({
+  isMobile,
+}) => {
   const classes = useStyles();
 
   const getMenuItems = () => (
@@ -73,21 +75,7 @@ export default function Navbar() {
     </React.Fragment>
   );
 
-  const [isMobile, setIsMobile] = useState<boolean>(false);
   const [drawerOpen, setDrawerOpen] = useState<boolean>(false);
-
-  useEffect(() => {
-    const setResponsiveness = () => {
-      return window.innerWidth < 800 ? setIsMobile(false) : setIsMobile(true);
-    };
-
-    setResponsiveness();
-    window.addEventListener("resize", () => setResponsiveness());
-
-    return () => {
-      window.removeEventListener("resize", () => setResponsiveness());
-    };
-  }, []);
 
   const toggleDrawer =
     (open: boolean) => (event: React.KeyboardEvent | React.MouseEvent) => {
@@ -135,4 +123,6 @@ export default function Navbar() {
       {/* </ElevationScroll> */}
     </div>
   );
-}
+};
+
+export default Navbar;

@@ -10,8 +10,14 @@ const AboutMe = () => {
       <Typography variant="h4" align="center">
         About Me
       </Typography>
-      <Box mx={10}>
-        <Typography>
+      <Box
+        mx={10}
+        style={{
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        <Typography style={{ maxWidth: "1000px" }}>
           Hello! My name is Josh Liu. I am a student at University of Southern
           California studying toward a Master's degree of Computer Science. I
           enjoy coding and learning new technologies. I am actively looking for
