@@ -51,6 +51,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: "700px",
     left: "0",
     top: "40px",
+    boxShadow: "0 3px 5px 2px rgba(0, 0, 0, .3)",
   },
 
   descriptionRight: {
@@ -58,6 +59,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: "700px",
     right: "0",
     top: "0",
+    boxShadow: "0 3px 5px 2px rgba(0, 0, 0, .3)",
   },
   picRight: {
     zIndex: -1,
@@ -70,6 +72,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       display: "none",
     },
+    boxShadow: "0 3px 5px 2px rgba(0, 0, 0, .3)",
   },
   picLeft: {
     zIndex: -1,
@@ -78,6 +81,7 @@ const useStyles = makeStyles((theme) => ({
     top: "20px",
     maxWidth: "500px",
     maxHeight: "300px",
+    boxShadow: "0 3px 5px 2px rgba(0, 0, 0, .3)",
 
     borderRadius: "5px",
     [theme.breakpoints.down("xs")]: {
