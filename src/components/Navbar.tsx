@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -61,6 +61,7 @@ const Navbar: React.FunctionComponent<{ isMobile: boolean }> = ({
     <React.Fragment>
       {MenuItems.map((item) => (
         <Link
+          key={item.to}
           to={item.to}
           spy={true}
           offset={offset}

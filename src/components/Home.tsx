@@ -46,7 +46,7 @@ const Home = () => {
   return (
     <React.Fragment>
       <Box className={classes.typedContainer} mt={10}>
-        <Grid container justify="center">
+        <Grid container justifyContent="center">
           <Avatar className={classes.avatar} src={avatar} alt="Mahmudul Alam" />
         </Grid>
         <Typography className={classes.title} variant="h4">

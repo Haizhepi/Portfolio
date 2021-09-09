@@ -130,8 +130,12 @@ const Description: React.FunctionComponent<{
           }}
         >
           <Breadcrumbs aria-label="breadcrumb">
-            {project.stack.map((tech) => (
-              <Typography color="textPrimary" className={classes.link}>
+            {project.stack.map((tech, idx) => (
+              <Typography
+                key={idx}
+                color="textPrimary"
+                className={classes.link}
+              >
                 <img src={tech.icon} alt="icon" className={classes.icon} />
                 {tech.name}
               </Typography>
