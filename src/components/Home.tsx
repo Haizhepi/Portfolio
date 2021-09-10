@@ -66,7 +66,14 @@ const Home = () => {
           />
         </Typography>
         <Box mt={5}>
-          <Button className={classes.resumeButton}>Download My Resume</Button>;
+          <Button
+            className={classes.resumeButton}
+            href="./Yunzhe_Liu_resume.pdf"
+            target="_blank"
+          >
+            Download My Resume
+          </Button>
+          ;
         </Box>
       </Box>
     </React.Fragment>
