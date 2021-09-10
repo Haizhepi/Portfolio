@@ -1,14 +1,38 @@
-# Getting Started with Create React App
+# [Josh's Portfolio](https://yunzheliu.net/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Josh Liu's Portfolio created by React.js in TypeScript, used material ui, ts-particles. Responsive mobile-first PWA. Deployed on AWS S3, distributed by Cloudfront using cloudformation
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [General info](#general-info)
+- [Technologies](#technologies)
+- [Screen Shots](#screenshots)
+- [Setup](#setup)
 
-### `yarn start`
+## General info
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Josh Liu's Portfolio with his resume
 
-The page will reload if you make edits.\
+## Technologies
+
+Project is created with:
+
+- React/Typescript
+- Material-ui
+- AWS (S3, CloudFormation, Cloudfront)
+
+## Screen Shots
+
+![plot](screenshot/screenshot1.png)
+![plot](screenshot/screenshot2.png)
+![plot](screenshot/screenshot3.png)
+![plot](screenshot/screenshot4.png)
+
+## Setup
+
+To run this project, install it locally using node:
+
+```
+$ yarn install
+$ yarn start
+```

@@ -68,7 +68,7 @@ const Home = () => {
         <Box mt={5}>
           <Button
             className={classes.resumeButton}
-            href="./Yunzhe_Liu_resume.pdf"
+            href="./Yunzhe_Liu_Resume.pdf"
             target="_blank"
           >
             Download My Resume
