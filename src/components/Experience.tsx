@@ -331,7 +331,7 @@ const Experience = () => {
                   align="center"
                   className={classes.body1}
                 >
-                  Bachlor of Science in Computer Science
+                  Bachelor of Science in Computer Science
                 </Typography>
                 <Typography
                   variant="subtitle1"
